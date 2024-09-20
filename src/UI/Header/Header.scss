@@ -1,0 +1,8 @@
+@import '../../_variables.scss';
+
+.header {
+  display: flex;
+  width: 80vw;
+  height: 20px;
+  background: linear-gradient(115deg, $primary-color 0%, $fourth-color 100%);;
+}

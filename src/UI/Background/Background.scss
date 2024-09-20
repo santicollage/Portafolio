@@ -1,0 +1,60 @@
+@import '../../_variables.scss';
+
+
+.bubble-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  max-width: 800px;
+  height: 100vh;
+  z-index: -1;
+
+  .bubble {
+    position: absolute;
+    background: $primary-color;
+    background: linear-gradient(115deg, $primary-color 0%, $secondary-color 100%);
+    opacity: 0.6;
+    filter: blur(20px);
+  }
+  .bubble-1 {
+    width: 65vw;
+    height: 45vh;
+    top: -40px;
+    left: -100px;
+    animation: flow 8s linear infinite;
+  }
+  .bubble-2 {
+    width: 40vw;
+    height: 30vh;
+    top: 26%;
+    right: -44px;
+    animation: flow 10s linear infinite;
+  }
+  .bubble-3 {
+    width: 50vw;
+    height: 55vh;
+    bottom: -157px;
+    left: 43px;
+    animation: flow 8s linear infinite;
+  }
+  .bubble-4 {
+    width: 14vw;
+    height: 14vh;
+    bottom: 60px;
+    right: 105px;
+    animation: flow 5s linear infinite;
+  }
+}
+
+@keyframes flow {
+  0% {
+    border-radius: 25% 75% 32% 68% / 43% 59% 41% 57%;
+  }
+  50% {
+    border-radius: 60% 40% 62% 38% / 56% 32% 68% 44%;
+  }
+  100% {
+    border-radius: 25% 75% 32% 68% / 43% 59% 41% 57%;
+  }
+}
