@@ -1,2 +1,86 @@
 @import '../../_variables.scss';
 
+.card-profile {
+  position: relative;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px 130px 20px 30px;
+  margin: 30px;
+  backdrop-filter: blur(70px);
+  text-align: start;
+
+  .card-profile__image {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(50%, -50%);
+    right: 0px;
+    top: 50%;
+  }
+  .card-profile__title {
+    color: $primary-color;
+  }
+  .buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+    .button-profile{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      border-radius: 10px;
+      font-size: 1.8rem;
+      font-weight: 700;
+      transition: all 0.2s ease-in-out;
+    }
+    .button-profile:hover {
+      box-shadow: 0 0 10px 5px rgba(0, 123, 255, 0.7);
+
+    }
+    .button-profile.first {
+      background-color: $primary-color;
+      color: $dark-color;
+    }
+    .button-profile.second {
+      background-color: $secondary-color;
+    }
+  }
+  .card-profile__paragraph {
+    word-wrap: break-word;
+  }
+}
+
+.button--about {
+  background: $secondary-color;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 20px 0 40px 0;
+  padding: 15px 25px;
+  border: 2px solid $secondary-color;
+  transition: all 0.2s ease-in-out;
+}
+
+.button--about:hover {
+  background: $dark-color;
+  color: $secondary-color;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 5px rgba(0, 123, 255, 0.7);
+}
+
+@media (max-width: 900px) {
+  .card-profile {
+    padding: 170px 20px 20px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    .card-profile__image {
+      right: 50%;
+      top: 40px;
+    }
+  }
+}

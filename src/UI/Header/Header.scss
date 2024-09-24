@@ -1,19 +1,23 @@
 @import '../../_variables.scss';
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   max-width: 570px;
   width: 60vw;
-  background: linear-gradient(115deg, rgb(18, 247, 240, 0.3) 0%, rgb(11, 96, 186, 0.3) 100%);
+  background: linear-gradient(115deg, rgb(18, 247, 240, 0.2) 0%, rgb(11, 96, 186, 0.2) 100%);
   border-radius: 0 0 20px 20px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
 
   .header-title {
     line-height: 0;
     margin: 0;
+    font-size: 1.5rem;
   }
   .nav__list {
     display: flex;
@@ -54,5 +58,11 @@
   }
   100%{
     border-color: #44ce7b;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    width: 80vw;
   }
 }

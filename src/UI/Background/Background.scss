@@ -17,31 +17,31 @@
     filter: blur(20px);
   }
   .bubble-1 {
-    width: 65vw;
-    height: 45vh;
+    width: 62vw;
+    height: 53vh;
     top: -40px;
     left: -100px;
     animation: flow 8s linear infinite;
   }
   .bubble-2 {
     width: 40vw;
-    height: 30vh;
-    top: 26%;
+    height: 36vh;
+    top: 24%;
     right: -44px;
     animation: flow 10s linear infinite;
   }
   .bubble-3 {
-    width: 50vw;
-    height: 55vh;
+    width: 43vw;
+    height: 61vh;
     bottom: -157px;
     left: 43px;
     animation: flow 8s linear infinite;
   }
   .bubble-4 {
-    width: 14vw;
-    height: 14vh;
-    bottom: 60px;
-    right: 105px;
+    width: 18vw;
+    height: 17vh;
+    bottom: 42px;
+    right: 190px;
     animation: flow 5s linear infinite;
   }
 }
@@ -55,5 +55,47 @@
   }
   100% {
     border-radius: 25% 75% 32% 68% / 43% 59% 41% 57%;
+  }
+}
+
+@media (max-width: 650px) {
+  .bubble-container{
+    .bubble-1 {
+      width: 65vw;
+      height: 45vh;
+    }
+    .bubble-2 {
+      height: 30vh;
+      top: 26%;
+    }
+    .bubble-3 {
+      width: 50vw;
+      height: 55vh;
+    }
+    .bubble-4 {
+      width: 14vw;
+      height: 14vh;
+      bottom: 60px;
+      right: 105px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .bubble-container{
+    .bubble-1 {
+      width: 77vw;
+      height: 45vh;
+    }
+    .bubble-2 {
+      width: 53vw;
+      height: 34vh;
+      top: 26%;
+    }
+    .bubble-3 {
+      width: 89vw;
+      height: 55vh;
+      left: -7px;
+    }
   }
 }

@@ -8,20 +8,21 @@ function Profile() {
 
   return (
     <>
-      <div>
-        <img src={imgProfile} alt="Foto de perfil" />
-        <h1>Santiago Urrego</h1>
-        <h3>Junior Developer Frontend &lt/&gt</h3>
-        <div>
+      <div className='card-profile'>
+        <img className='card-profile__image' src={imgProfile} alt="Foto de perfil" />
+        <h1 className='card-profile__title'>Santiago Urrego</h1>
+        <h3 className='card-profile__subtitle'>Junior Developer Frontend &lt;/&gt;</h3>
+        <div className='buttons-container'>
           {links.map(link => 
-            <a href={link.url} target="_blank" key={link.name}>
-              <img src={link.svg} alt={link.name} />
+            <a className={`button-profile ${link.importance}`} href={link.url} target="_blank" key={link.name}>
+              <img className='button__icon' src={link.svg} alt={link.name} />
+              {link.text}
             </a>
           )}
         </div>
-        <p>Soy un desarrollador frontend multidisciplinario, apasionado por la programación, el diseño y la fotografía, combinando creatividad y tecnología para crear y desarrollar proyectos relevantes y emocionantes.</p>
+        <p className='card-profile__paragraph'>Soy un desarrollador frontend multidisciplinario, apasionado por la programación, el diseño y la fotografía, combinando creatividad y tecnología para crear y desarrollar proyectos relevantes y emocionantes.</p>
       </div>
-      <button>Sobre mí</button>
+      <button className='button--about'>Sobre mí</button>
     </>
   );
 }

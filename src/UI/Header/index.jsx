@@ -17,9 +17,9 @@ function Header() {
     setViewportWidth(window.innerWidth);
   };
 
-  if (viewportWidth <= 420) {
+  if (viewportWidth <= 360) {
     limit = 1;
-  } else if (viewportWidth <= 500) {
+  } else if (viewportWidth <= 420) {
     limit = 2;
   }
 
