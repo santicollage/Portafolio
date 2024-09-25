@@ -2,9 +2,11 @@ import React from 'react';
 import './Profile.scss';
 import imgProfile from '../../assets/images/profile.jpg';
 import {links} from '../../links'
+import { useNavigate } from 'react-router-dom';
 
 
 function Profile() {
+  const navigate = useNavigate();
 
   return (
     <>
@@ -22,7 +24,7 @@ function Profile() {
         </div>
         <p className='card-profile__paragraph'>Soy un desarrollador frontend multidisciplinario, apasionado por la programación, el diseño y la fotografía, combinando creatividad y tecnología para crear y desarrollar proyectos relevantes y emocionantes.</p>
       </div>
-      <button className='button--about'>Sobre mí</button>
+      <button onClick={() => navigate('/sobre-mi')} className='button--about'>Sobre mí</button>
     </>
   );
 }

@@ -37,7 +37,7 @@
       transition: all 0.2s ease-in-out;
     }
     .button-profile:hover {
-      box-shadow: 0 0 10px 5px rgba(0, 123, 255, 0.7);
+      box-shadow: 0 0 10px 5px rgba(18, 247, 240, 0.7);
 
     }
     .button-profile.first {
@@ -67,7 +67,7 @@
   background: $dark-color;
   color: $secondary-color;
   transform: scale(1.05);
-  box-shadow: 0 0 10px 5px rgba(0, 123, 255, 0.7);
+  box-shadow: 0 0 10px 5px rgba(93, 41, 230, 0.7);
 }
 
 @media (max-width: 900px) {
