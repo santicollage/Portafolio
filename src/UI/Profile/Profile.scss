@@ -4,7 +4,7 @@
   position: relative;
   width: 100%;
   border-radius: 20px;
-  padding: 20px 130px 20px 30px;
+  padding: 20px 140px 20px 30px;
   margin: 30px;
   backdrop-filter: blur(70px);
   text-align: start;
@@ -36,16 +36,18 @@
       font-weight: 700;
       transition: all 0.2s ease-in-out;
     }
-    .button-profile:hover {
-      box-shadow: 0 0 10px 5px rgba(18, 247, 240, 0.7);
-
-    }
     .button-profile.first {
       background-color: $primary-color;
       color: $dark-color;
     }
+    .button-profile.first:hover {
+      box-shadow: 0 0 10px 5px rgba(18, 247, 240, 0.7);
+    }
     .button-profile.second {
       background-color: $secondary-color;
+    }
+    .button-profile.second:hover {
+      box-shadow: 0 0 10px 5px rgba(93, 41, 230, 0.7);
     }
   }
   .card-profile__paragraph {
