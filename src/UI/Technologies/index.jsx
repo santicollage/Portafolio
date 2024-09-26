@@ -1,9 +1,8 @@
 import React, {useEffect} from 'react';
-import { technologies } from '../../technologies';
 import './technologies.scss'
 
 
-function Technologies() {
+function Technologies({title, technologies, distance}) {
   const [positions, setPositions] = React.useState(1);
 
   const calculatePosition = (i) => {
@@ -26,13 +25,13 @@ function Technologies() {
 
   return (
     <section className='technologies-section'>
-      <h2 className='technologies-section__title'>Tecnologias</h2>
+      <h2 className='technologies-section__title'>{title}</h2>
       <div className='card-technology-container'>
         {technologiesCopy.map((technology) => 
           <div 
           className='card-technology' 
           key={technology.name} 
-          style={{left: `${technology.position * 100}px`, opacity: `${(technology.position == -1 || technology.position >= technologiesCopy.length - 2) ? 0 : 1}`}}>
+          style={{left: `${technology.position * distance}px`, opacity: `${(technology.position == -1 || technology.position >= technologiesCopy.length - 2) ? 0 : 1}`}}>
             <img className='card-technology__image' src={technology.svg} alt={technology.name} />
             <p className='card-technology__name'>{technology.name}</p>
           </div>

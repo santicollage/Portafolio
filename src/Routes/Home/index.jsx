@@ -1,21 +1,29 @@
 import React from 'react';
 import './Home.scss'
+import { technologies } from '../../technologies';
+import { tools } from '../../tools';
 import {Profile} from '../../UI/Profile';
 import {Technologies} from '../../UI/Technologies';
 import {Projects} from '../../UI/Projects';
 import {Studies} from '../../UI/Studies';
-import {Tools} from '../../UI/Tools';
-
 
 function Home() {
 
   return (
     <main>
       <Profile/>
-      <Technologies/>
+      <Technologies 
+        title={'Tecnologias'} 
+        technologies={technologies} 
+        distance={100}
+      /> 
       <Projects/>
       <Studies/>
-      <Tools/>
+      <Technologies 
+        title={'Otras herramientas'} 
+        technologies={tools} 
+        distance={120}
+      />
     </main>
   );
 }
