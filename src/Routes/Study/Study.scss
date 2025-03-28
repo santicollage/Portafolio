@@ -1,0 +1,42 @@
+@import '../../_variables.scss';
+
+.study {
+  position: relative;
+  width: 60vw;
+  padding: 30px;
+  margin: 30px 0;
+  backdrop-filter: blur(70px);
+  border-radius: 20px;
+
+  @media (max-width: 800px) {
+    width: 80vw;
+  }
+
+  .study__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: $secondary-color;
+  }
+  .study__title {
+    color: $third-color;
+  }
+  .study__university {
+    color: $fourth-color;
+  }
+  .study__years {
+
+  }
+  .study__text {
+    span {
+      display: block;
+      margin-top: 22px;
+    }
+  }
+}

@@ -1,8 +1,10 @@
 import React from 'react';
 import './Header.scss'
 import {links} from '../../links'
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
+  const navigate = useNavigate();
   const [viewportWidth, setViewportWidth] = React.useState(window.innerWidth);
   let limit = 3;
 
@@ -25,7 +27,7 @@ function Header() {
 
   return (
     <header className='header'>
-      <h2 className='header-title'>santi.collage</h2>
+      <h2 onClick={() => navigate('/')} className='header-title'>santi.collage</h2>
       <nav className='nav'>
         <ul className='nav__list'>
           {links.slice(0,limit).map(link => 

@@ -13,7 +13,7 @@ function Home() {
     <main>
       <Profile/>
       <Technologies 
-        title={'Tecnologias'} 
+        title={'Tecnologías'} 
         technologies={technologies} 
         distance={100}
       /> 

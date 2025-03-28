@@ -5,7 +5,8 @@ import { Header } from '../UI/Header';
 import { Background } from '../UI/Background';
 import { Home } from './Home';
 import { About } from './About';
-import { Studies } from './Studies';
+import { Study } from './Study';
+import { Project } from './Project';
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/sobre-mi' element={<About/>} />
-          <Route path='/estudio/:name' element={<Studies/>} />
+          <Route path='/estudio/:name' element={<Study/>} />
+          <Route path='/proyecto/:name' element={<Project/>} />
           <Route path='*' element={<p>Not found</p>} />
         </Routes>
 
