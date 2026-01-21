@@ -11,37 +11,77 @@ const projects = [
   {
     name: 'NPS',
     title: 'NPS Diesel Landing Page',
-    text: 'NPS es una empresa de comercialización de repuestos diésel con amplia experiencia en el sector.',
+    text: 'NPS es una empresa de comercialización de repuestos diésel con amplia experiencia en el sector. Su presencia digital era limitada, lo que restringía su alcance a nuevos clientes.',
     image: npsImage,
-    url: 'https://santicollage.github.io/nps-pagina-web/',
-    github: 'https://github.com/santicollage/nps-pagina-web',
-    description: 'NPS es una empresa especializada en la comercialización de repuestos diésel nuevos, con una amplia trayectoria y experiencia en el sector. Ha colaborado con diversas empresas de transporte urbano, intermunicipal, turismo, recolección y logística. <br/> Sin embargo, su presencia digital era limitada, lo que restringía su alcance a nuevos clientes. Para solucionar este problema, se desarrolló una página web que permite a los clientes potenciales conocer más sobre la empresa, explorar el catálogo de productos y contactar directamente con un asesor a través de un call to action.',
+    url: 'https://www.npsdieselsas.com/',
+    github: 'https://github.com/santicollage/NPS-WEB',
+    description: 'NPS es una empresa especializada en la comercialización de repuestos diésel nuevos, con una amplia trayectoria y experiencia en el sector. Ha colaborado con diversas empresas de transporte urbano, intermunicipal, turismo, recolección y logística. <br/> Sin embargo, su presencia digital era limitada, lo que restringía su alcance a nuevos clientes. Para solucionar este problema, se desarrolló un e-commerce que permite a los clientes potenciales conocer más sobre la empresa, explorar el catálogo de productos y comprar directamente desde la pagina web o contactar directamente con un asesor a través de un call to action.',
     characteristics: [
-      "Diseño alineado con la identidad corporativa",
-      "Interfaz responsiva para una óptima experiencia en cualquier dispositivo",
-      "Optimización SEO desde el frontend",
-      "Interactividad y elementos dinámicos"
+      "Arquitectura Fullstack desacoplada, con frontend y API REST independientes, diseñada para escalabilidad y mantenimiento.",
+      "Interfaz web responsiva y alineada con la identidad corporativa, optimizada para una experiencia de usuario consistente en cualquier dispositivo.",
+      "Autenticación segura mediante JWT e inicio de sesión con Google, garantizando control de acceso y protección de datos.",
+      "Gestión completa del e-commerce mediante CRUD de productos, carrito de compras y pedidos, integrando la lógica de negocio desde la API.",
+      "Integración de pasarela de pagos, permitiendo transacciones seguras dentro de la plataforma.",
+      "Almacenamiento de archivos e imágenes en Amazon S3, asegurando disponibilidad y escalabilidad.",
+      "Optimización SEO desde el frontend y uso de elementos dinámicos para mejorar visibilidad y experiencia de usuario.",
+      "Módulo de estadísticas básicas y notificaciones por correo electrónico, orientado al seguimiento de ventas y eventos del sistema."
     ],
     process: [
       {
-        etapa: "Definición del Proyecto",
-        detalle: "Se elaboró un brief con el cliente para establecer objetivos, contenidos y directrices de diseño."
+        etapa: "Descubrimiento y definición del proyecto",
+        detalle: "Reuniones iniciales con el cliente para levantamiento de requerimientos funcionales y no funcionales. Definición de objetivos del negocio, alcance del e-commerce, flujos de usuario y prioridades. Elaboración de un brief técnico y funcional como base para el diseño y desarrollo."
       },
       {
-        etapa: "Prototipado",
-        detalle: "Se diseñó un prototipo en Figma considerando parámetros visuales y de usabilidad."
+        etapa: "Diseño UX/UI y prototipado",
+        detalle: "Diseño de la arquitectura de información y flujos de navegación. Creación de prototipos en Figma, alineados con la identidad corporativa y criterios de usabilidad. Validación de interfaces y ajustes iterativos antes de pasar a desarrollo."
       },
       {
-        etapa: "Desarrollo Web",
-        detalle: "Se implementó la aplicación de forma estructurada y escalable utilizando tecnologías modernas."
+        etapa: "Diseño de arquitectura y base de datos",
+        detalle: "Definición de una arquitectura Fullstack desacoplada (Frontend + API REST). Modelado del esquema de base de datos relacional para usuarios, productos, pagos, carritos y pedidos. Definición de relaciones, claves y estructura orientada a escalabilidad."
       },
       {
-        etapa: "Implementación y Producción",
-        detalle: "Se está realizando un inventario de productos y fotografías antes del lanzamiento oficial, con una versión preliminar en GitHub Pages."
+        etapa: "Desarrollo del backend y API REST",
+        detalle: "Implementación de la API REST con Node.js y Express, centralizando la lógica de negocio. Desarrollo de CRUD completos para gestión de usuarios, productos, carritos de compra y pedidos. Implementación de autenticación y autorización mediante JWT y login con Google. Integración de servicios externos como pasarela de pagos, almacenamiento en Amazon S3 y envío de notificaciones por correo electrónico."
+      },
+      {
+        etapa: "Desarrollo del frontend",
+        detalle: "Implementación de la aplicación frontend con React, utilizando una arquitectura basada en componentes. Gestión del estado global mediante Redux Toolkit para carrito, sesión y datos persistentes. Configuración de rutas protegidas y públicas usando React Router. Integración del frontend con la API REST y manejo de estados de carga, errores y validaciones. Optimización SEO y mejora de rendimiento desde el frontend."
+      },
+      {
+        etapa: "Pruebas y validación",
+        detalle: "Pruebas funcionales de flujos críticos: autenticación, compra, pagos y gestión de pedidos. Validación de integridad de datos y comportamiento de la aplicación en distintos dispositivos. Ajustes finales basados en feedback del cliente."
+      },
+      {
+        etapa: "Despliegue, infraestructura y puesta en producción",
+        detalle: "Despliegue del frontend en Netlify y del backend en Render. Configuración de la base de datos en Neon (PostgreSQL). Implementación de Cloudflare para manejo de dominio, seguridad y rendimiento. Configuración de variables de entorno. Publicación y monitoreo inicial del sistema."
       }
     ],
     processImages: [NPS1, NPS2, NPS3],
-    technologies: ["React", "Sass", "Vite", "Figma", "HTML", "CSS", "JavaScript"],
+    technologies: [
+    "React",
+    "Redux Toolkit",
+    "React Router",
+    "JavaScript (ES6+)",
+    "HTML5",
+    "CSS3",
+    "Tailwind CSS",
+    "Vite",
+    "Node.js",
+    "Express.js",
+    "PostgreSQL",
+    "Neon",
+    "REST API",
+    "JWT Authentication",
+    "Google OAuth",
+    "Amazon S3",
+    "Payment Gateway",
+    "Render",
+    "Netlify",
+    "Cloudflare",
+    "Git",
+    "GitHub",
+    "Figma"
+    ]
   },
   {
     name: 'Grid',

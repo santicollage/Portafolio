@@ -6,6 +6,9 @@ import iconGithub from './assets/icons/github-dark.svg';
 import iconSass from './assets/icons/sass.svg';
 import iconFigma from './assets/icons/figma.svg';
 import iconTailwind from './assets/icons/tailwind.svg';
+import iconNodejs from './assets/icons/nodejs.svg';
+import iconExpressjs from './assets/icons/expressjs.svg';
+import iconPostgresql from './assets/icons/postgresql.svg';
 
 const technologies = [
 {
@@ -39,6 +42,18 @@ const technologies = [
 {
   name: 'Tailwind',
   svg: iconTailwind,
+},
+{
+  name: 'NodeJS',
+  svg: iconNodejs,
+},
+{
+  name: 'ExpressJS',
+  svg: iconExpressjs,
+},
+{
+  name: 'PostgreSQL',
+  svg: iconPostgresql,
 },
 ];
 

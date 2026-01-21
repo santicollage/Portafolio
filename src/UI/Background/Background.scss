@@ -14,13 +14,13 @@
     background: $primary-color;
     background: linear-gradient(115deg, $primary-color 0%, $secondary-color 100%);
     opacity: 0.6;
-    filter: blur(4px);
+    filter: blur(10px);
     box-shadow: 0 0 60px rgba(10, 181, 251, 1);
   }
   .bubble-1 {
     width: 62vw;
     height: 80vh;
-    top: -150px;
+    top: -200px;
     left: -100px;
     animation: flow 8s linear infinite;
   }

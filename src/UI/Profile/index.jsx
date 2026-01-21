@@ -12,8 +12,8 @@ function Profile() {
     <>
       <div className='card-profile'>
         <img className='card-profile__image' src={imgProfile} alt="Foto de perfil" />
+        <h3 className='card-profile__subtitle'>Web Developer &lt;/&gt;</h3>
         <h1 className='card-profile__title'>Santiago Urrego</h1>
-        <h3 className='card-profile__subtitle'>Junior Developer Frontend &lt;/&gt;</h3>
         <div className='buttons-container'>
           {links.map(link => 
             <a className={`button-profile ${link.importance}`} href={link.url} target="_blank" key={link.name}>
@@ -22,7 +22,7 @@ function Profile() {
             </a>
           )}
         </div>
-        <p className='card-profile__paragraph'>Soy un desarrollador frontend multidisciplinario, apasionado por la programación, el diseño y la fotografía, combinando creatividad y tecnología para crear y desarrollar proyectos relevantes y emocionantes.</p>
+        <p className='card-profile__paragraph'> Desarrollador Fullstack (Frontend-focused) con experiencia en productos digitales y plataformas web. Transformo requerimientos de negocio en interfaces funcionales y escalables, aplicando pensamiento crítico y analítico para diseñar estrategias técnicas y soluciones optimizadas utilizando React, Tailwind y JavaScript, integradas con APIs REST y bases de datos relacionales.</p>
       </div>
       <button onClick={() => navigate('/sobre-mi')} className='button--about'>Sobre mí</button>
     </>

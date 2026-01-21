@@ -3,7 +3,7 @@ import iconLinkedin from './assets/icons/linkedin.svg';
 import iconGithub from './assets/icons/github.svg';
 import cvSvg from './assets/icons/cv.svg';
 import cvSvgDark from './assets/icons/cv-dark.svg';
-import cvPdf from '../public/documents/CV.pdf';
+import cvPdf from '../public/documents/CV.docx';
 
 const links = [
   {

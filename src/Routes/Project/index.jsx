@@ -39,7 +39,7 @@ function Project() {
           <li key={index} className='project__process-item'>
             <h4 className='project__process-title'>{process.etapa}</h4>
             <div className='project__process-detail-container'>
-              <p className={`project__process-detail ${index == 3 && 'last-process'}`}>{process.detalle}</p>
+              <p className={`project__process-detail ${index >= 3 && 'last-process'}`}>{process.detalle}</p>
               {
                 project.processImages[index] &&
                 <img src={project.processImages[index]} alt={`Proceso ${process.etapa}`} className='project__process-image' />

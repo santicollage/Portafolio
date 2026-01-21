@@ -7,7 +7,13 @@
 
   color-scheme: light dark;
   color: $white-color;
-  background-color: $dark-color;
+  background: linear-gradient(
+  135deg,
+  #0C1524 0%,
+  #072e47 35%,
+  #051b34 70%,
+  #1b0854 100%
+);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;

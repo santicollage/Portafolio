@@ -22,7 +22,7 @@ function Home() {
       <Technologies 
         title={'Otras herramientas'} 
         technologies={tools} 
-        distance={120}
+        distance={140}
       />
     </main>
   );
